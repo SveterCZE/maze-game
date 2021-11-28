@@ -1,5 +1,5 @@
 <h1>Introduction</h1>
-My first large project built in Java, a 2D tile-based world genration and exploration game. It is based on the final project of CS61B, Berkeley's data structures class (see https://sp19.datastructur.es/materials/proj/proj3/proj3).
+My first large project built in Java, a 2D tile-based world generation and exploration game. It is based on the final project of CS61B, Berkeley's data structures class (see https://sp19.datastructur.es/materials/proj/proj3/proj3).
 
 The rendering engine, some starter code as well as the random numbers generator were provided by Berkeley team. However, I wrote all the code for world generation and the interaction between the player and the environment. I did not attend the class and followed just its on-line version.
 
@@ -24,7 +24,7 @@ After selecting a new game, another window will be displayed, asking the user to
 Once the seed is entered, press 'S' or 's' to generate the world. Only the player avatar (@) and its surroundings are visible, while the rest of the map is covered by a fog of war. Also, a status bar is diplayed on the top of the window, displaying the level number, identification of tile over which a mouse cursor is hovering, player's health and its inventory.
 ![image](https://user-images.githubusercontent.com/46304018/143784905-bb63ae86-07d3-4772-9231-bcf4a496ecfb.png)
 
-The world looks something like this - it consist of uniquely generated rooms and corridors connecting them together. Various items are randomly generated around the map.
+The world looks something like this - it consists of uniquely generated rooms and corridors connecting them together. Various items are randomly generated around the map.
 ![image](https://user-images.githubusercontent.com/46304018/143785043-7ad43fa5-1de0-4014-9933-05fb777f9096.png)
 
 <h2>Game items</h2>
@@ -38,7 +38,7 @@ The following items can be found in the world:
 | World map | ![map](https://user-images.githubusercontent.com/46304018/143785699-e164a252-b2af-443e-8cce-87688aa854cc.png) | A map that removes fog of war and displays the whole map. |
 | Marker | ✎ | If equipped by the player, it marks the tiles that have been visited by it to aid in the navigation around the world. Very helpful if the player does not have a map. |
 | Poison | ☠ | Poisons the player, causing it to lose 35 health points. |
-| Radioactivity | ☢ | Exposes the player to radioactivity. It loses 25 health points immediatly and 1 additional point per turn. |
+| Radioactivity | ☢ | Exposes the player to radioactivity. It loses 25 health points immediately and 1 additional point per turn. |
 | First aid kit | **+** | Restores 30 health points if the player was not exposed to radioactivity. If it was exposed, the first aid kit removes the effects of radioactivity, but does not restore any health points. |
 | Key | ⚿ | When equipped, opens the door to allow the player to enter the next level. |
 | Locked door | █ | Door to the next level. A key must be equipped to open the door. |
@@ -48,7 +48,7 @@ The following items can be found in the world:
 In each level, the player must:
 * Find the key.
 * Enter the door to the next level.
-* Avoid being killed by the ghost, poisons or radioactivity..
+* Avoid being killed by the ghost, poisons or radioactivity.
 
 There are 9,223,372,036,854,775,807 unique levels available, so each player should have some fun for a while.
 
