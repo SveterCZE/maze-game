@@ -21,12 +21,28 @@ After selecting a new game, another window will be displayed, asking the user to
 <img src="https://user-images.githubusercontent.com/46304018/143784599-bc2f7d44-a8df-448f-9ad1-23f44a200a31.png" width="35%" height="35%"> <img src="https://user-images.githubusercontent.com/46304018/143784707-82db83c9-ea30-4938-a28b-e9b5603ecec1.png" width="35%" height="35%">
 
 
-Once the seed is entered, press 'S' or 's' to generate the world.
+Once the seed is entered, press 'S' or 's' to generate the world. Only the player avatar (@) and its surroundings are visible, while the rest of the map is covered by a fog of war. Also, a status bar is diplayed on the top of the window, displaying the level number, identification of tile over which a mouse cursor is hovering, player's health and its inventory.
+![image](https://user-images.githubusercontent.com/46304018/143784905-bb63ae86-07d3-4772-9231-bcf4a496ecfb.png)
 
+The world looks something like this - it consist of uniquely generated rooms and corridors connecting them together. Various items are randomly generated around the map.
+![image](https://user-images.githubusercontent.com/46304018/143785043-7ad43fa5-1de0-4014-9933-05fb777f9096.png)
 
+<h2>Game items</h2>
+The following items can be found in the world:
 
-
-
+| Game item | Symbol | Description |
+| --- | --- | --- |
+| Avatar | @ | Player's avatar. Press 'W', 'A', 'S', 'D' to move it around the world. If the player's health drops to 0, it dies. |
+| Ghost | ![ghost](https://user-images.githubusercontent.com/46304018/143785600-01b057a7-b8cf-45a2-a924-73d15f46c6b5.png) | Ghost. Uses a pathfinding algorithm to chase the player around the map. If the ghost catches the player, the player dies unless it equipped a magic potion, in which case the ghost dies. |
+| Anti-ghost potion | ☕ | A magic potion. If equipped by the player, it will survive an encounter with the ghost. |
+| World map | ![map](https://user-images.githubusercontent.com/46304018/143785699-e164a252-b2af-443e-8cce-87688aa854cc.png) | A map that removes fog of war and displays the whole map. |
+| Marker | ✎ | If equipped by the player, it marks the tiles that have been visited by it to aid in the navigation around the world. Very helpful if the player does not have a map. |
+| Poison | ☠ | Poisons the player, causing it to lose 35 health points. |
+| Radioactivity | ☢ | Exposes the player to radioactivity. It loses 25 health points immediatly and 1 additional point per turn. |
+| First aid kit | + | Restores 30 health points if the player was not exposed to radioactivity. If it was exposed, the first aid kit removes the effects of radioactivity, but does not restore any health points. |
+| Key | ⚿ | When equipped, opens the door to allow the player to enter the next level. |
+| Locked door | █ | Door to the next level. A key must be equipped to open the door. |
+| Open door | ▢ | Door to the next level. Once reached by the player, a new level will start. |
 
 <h1>Known issues</h1>
 * Hard coded resolution for a 4k monitor. Might not work properly on monitors with a lower resolution.
