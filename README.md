@@ -1,7 +1,7 @@
 <h1>Introduction</h1>
 My first large project built in Java, a 2D tile-based world genration and exploration game. It is based on the final project of CS61B, Berkeley's data structures class (see https://sp19.datastructur.es/materials/proj/proj3/proj3).
 
-The rendering engine, some starter code as well as the random numbers generator were provided by Berkeley team. However, I wrote all the code for world generation and the interaction between the player and the environment.
+The rendering engine, some starter code as well as the random numbers generator were provided by Berkeley team. However, I wrote all the code for world generation and the interaction between the player and the environment. I did not attend the class and followed just its on-line version.
 
 <h1>Installation</h1>
 Download all the files and simply run Main.java.
@@ -39,13 +39,33 @@ The following items can be found in the world:
 | Marker | ✎ | If equipped by the player, it marks the tiles that have been visited by it to aid in the navigation around the world. Very helpful if the player does not have a map. |
 | Poison | ☠ | Poisons the player, causing it to lose 35 health points. |
 | Radioactivity | ☢ | Exposes the player to radioactivity. It loses 25 health points immediatly and 1 additional point per turn. |
-| First aid kit | + | Restores 30 health points if the player was not exposed to radioactivity. If it was exposed, the first aid kit removes the effects of radioactivity, but does not restore any health points. |
+| First aid kit | **+** | Restores 30 health points if the player was not exposed to radioactivity. If it was exposed, the first aid kit removes the effects of radioactivity, but does not restore any health points. |
 | Key | ⚿ | When equipped, opens the door to allow the player to enter the next level. |
 | Locked door | █ | Door to the next level. A key must be equipped to open the door. |
 | Open door | ▢ | Door to the next level. Once reached by the player, a new level will start. |
 
+<h2>Game objectives</h2>
+In each level, the player must:
+* Find the key.
+* Enter the door to the next level.
+* Avoid being killed by the ghost, poisons or radioactivity..
+
+There are 9,223,372,036,854,775,807 unique levels available, so each player should have some fun for a while.
+
+<h2>Game controls</h2>
+
+* 'W', 'A', 'S', 'D' – Movement of player around the world
+* 'Q' – Quit the game. The game is saved and can be loaded from the main menu.
+
 <h1>Known issues</h1>
+
 * Hard coded resolution for a 4k monitor. Might not work properly on monitors with a lower resolution.
 * A minor bug appears when the ghost navigating through rooms of certain shape.
 
 <h1>TODO</h1>
+
+* Improve the fog of war, so that it shows only the room in which the player is located.
+* Introduce additional game items and mechanics.
+
+<h1>Testimonials</h1>
+"Much better game than Grand Theft Auto: The Trilogy – The Definitive Edition" – every game journalist
