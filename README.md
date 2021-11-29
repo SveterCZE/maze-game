@@ -1,10 +1,14 @@
 <h1>Introduction</h1>
 My first large project built in Java, a 2D tile-based world generation and exploration game. It is based on the final project of CS61B, Berkeley's data structures class (see https://sp19.datastructur.es/materials/proj/proj3/proj3).
 
-The rendering engine, some starter code as well as the random numbers generator were provided by Berkeley team. However, I wrote all the code for world generation and the interaction between the player and the environment. I did not attend the class and followed just its on-line version.
+The rendering engine, some starter code as well as the random numbers generator were provided by Berkeley team (see the starte code at: https://github.com/Berkeley-CS61B/skeleton-sp19/tree/master/proj3/byow). However, I wrote all the code for world generation and the interaction between the player and the environment.
 
 <h1>Installation</h1>
-Download all the files and simply run Main.java.
+
+* Clone the whole repository.
+* Compile the app using `javac byow/Core/Main.java`. On Windows, you might need to use `javac -encoding UTF-8  byow/Core/Main.java`.
+* Run the app using `java byow.Core.Main`
+* Enjoy the game :)
 
 <h1>Features</h1>
 Once the program is launched, a menu window will be displayed.
@@ -59,13 +63,15 @@ There are 9,223,372,036,854,775,807 unique levels available, so each player shou
 
 <h1>Known issues</h1>
 
-* Hard coded resolution for a 4k monitor. Might not work properly on monitors with a lower resolution.
-* A minor bug appears when the ghost navigating through rooms of certain shape.
+* Map might not be displayed properly on some combinations of screen resolutions and DPI.
+* A minor bug appears when the ghost navigates through rooms of certain shape.
+* Unicode symbols of some game items might not display properly on some systems.
 
 <h1>TODO</h1>
 
 * Improve the fog of war, so that it shows only the room in which the player is located.
 * Introduce additional game items and mechanics.
+* Replace Unicode symbols for game items with icons.
 
 <h1>Testimonials</h1>
 "Much better game than Grand Theft Auto: The Trilogy – The Definitive Edition" – every game journalist
