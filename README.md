@@ -6,8 +6,8 @@ The rendering engine, some starter code as well as the random numbers generator 
 <h1>Installation</h1>
 
 * Clone the whole repository.
-* Compile the app using `javac byow/Core/Main.java`. On Windows, you might need to use `javac -encoding UTF-8  byow/Core/Main.java`.
-* Run the app using `java byow.Core.Main`
+* Compile the game using `javac byow/Core/Main.java`. On Windows, you might need to use `javac -encoding UTF-8  byow/Core/Main.java`.
+* Run the game using `java byow.Core.Main`
 * Enjoy the game :)
 
 <h1>Features</h1>
